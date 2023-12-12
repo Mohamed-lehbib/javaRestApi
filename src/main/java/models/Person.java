@@ -1,7 +1,10 @@
 package models;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Person {
+    @JsonProperty
     private int nni;
+    @JsonProperty
     private String nom;
 
     public Person() {}
