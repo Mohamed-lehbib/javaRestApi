@@ -13,6 +13,8 @@ public class App {
         ResourceConfig config = new ResourceConfig();
         config.register(PersonResource.class);  // Register PersonResource
         config.register(JacksonFeature.class);  // Register JacksonFeature
+        // If you're not using package scanning, explicitly register the CORSFilter
+        config.register(rest.CORSFilter.class);
         GrizzlyHttpServerFactory.createHttpServer(baseUri, config);
         System.out.println("Jersey app started at " + baseUri);
     }
