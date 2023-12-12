@@ -1,0 +1,7 @@
+
+O
+java:S4925"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8Õ—ÑÅ1
+L	java:S106"+Replace this use of System.out by a logger.(¶èøÅøÿÿÿÿ8Ö—ÑÅ1
+G	java:S106"+Replace this use of System.out by a logger.(äŠš…8×—ÑÅ1
+i
+java:S1871""LThis branch's code block is the same as the block for the branch on line 32.(Ì“ˆß8Ø—ÑÅ1

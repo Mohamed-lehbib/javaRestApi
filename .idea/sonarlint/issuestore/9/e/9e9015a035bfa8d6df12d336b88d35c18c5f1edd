@@ -1,0 +1,13 @@
+
+W
+java:S1117#":Rename "requet" which hides the field declared at line 19.(äèÑ¤8Åñ§ÑÅ1
+L	java:S106$"+Replace this use of System.out by a logger.(ßìÌêúÿÿÿÿ8Åñ§ÑÅ1
+\
+java:S1117*":Rename "person" which hides the field declared at line 20.(ˆ¨ëúÿÿÿÿ8Æñ§ÑÅ1
+L	java:S106+"+Replace this use of System.out by a logger.(èëËıÿÿÿÿ8Æñ§ÑÅ1
+L	java:S1067"+Replace this use of System.out by a logger.(ßìÌêúÿÿÿÿ8Çñ§ÑÅ1
+L	java:S106>"+Replace this use of System.out by a logger.(èëËıÿÿÿÿ8Èñ§ÑÅ1
+L	java:S106J"+Replace this use of System.out by a logger.(ßìÌêúÿÿÿÿ8Éñ§ÑÅ1
+L	java:S106O"+Replace this use of System.out by a logger.(²©ë³ùÿÿÿÿ8Éñ§ÑÅ1
+F	java:S106Q"+Replace this use of System.out by a logger.(ğĞ–%8Éñ§ÑÅ1
+X	java:S125s"<This block of commented-out lines of code should be removed.(üà¹š8™§©ÑÅ1
