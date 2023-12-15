@@ -1,29 +1,43 @@
 <!-- Search Bar -->
-<div>
-  <input type="number" [(ngModel)]="searchNni" placeholder="Search by NNI">
-  <button (click)="searchNni != null ? onSelectPerson(searchNni) : null">Search</button>
-</div>
+<div class="container">
+  <!-- Card for Search -->
+  <div class="card">
+      <h2 class="card-title">Search Person</h2>
+    <div class="card-content">
+      <input type="number" [(ngModel)]="searchNni" placeholder="Search by NNI">
+      <button (click)="searchNni != null ? onSelectPerson(searchNni) : null">Search</button>
+    </div>
+  </div>
 
 <!-- Form for Add/Update -->
-<div>
-  <input type="number" [(ngModel)]="selectedPerson.nni" placeholder="NNI">
-  <input type="text" [(ngModel)]="selectedPerson.nom" placeholder="Nom">
-  <button (click)="onCreatePerson()">Submit</button>
-</div>
+  <div class="card">
+    <h2 class="card-title">{{isUpdateMode ? 'Update' : 'Add'}} Person</h2>
+    <div class="card-content">
+      <input type="number" [(ngModel)]="selectedPerson.nni" placeholder="NNI">
+      <input type="text" [(ngModel)]="selectedPerson.nom" placeholder="Nom"> <br>
+      <button (click)="onFormSubmit()">{{isUpdateMode ? 'Update' : 'Add'}} Person</button>
+    </div>
+  </div>
 
 <!-- Persons Table -->
-<table>
-  <tr>
-    <th>NNI</th>
-    <th>Nom</th>
-    <th>Actions</th>
-  </tr>
-  <tr *ngFor="let person of persons">
-    <td>{{ person.nni }}</td>
-    <td>{{ person.nom }}</td>
-    <td>
-      <button (click)="onSelectPerson(person.nni)">Update</button>
-      <button (click)="onDeletePerson(person.nni)">Delete</button>
-    </td>
-  </tr>
-</table>
+  <div class="card">
+    <h2 class="card-title">Persons List</h2>
+    <div class="card-content">
+      <table>
+        <tr>
+          <th>NNI</th>
+          <th>Nom</th>
+          <th>Actions</th>
+        </tr>
+        <tr *ngFor="let person of persons">
+          <td>{{ person.nni }}</td>
+          <td>{{ person.nom }}</td>
+          <td>
+            <button (click)="onSelectPerson(person.nni)">Edit</button>
+            <button (click)="onDeletePerson(person.nni)">Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

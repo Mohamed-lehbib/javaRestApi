@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #eaeaea;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+}
+
+/* Input and Button Styles */
+input[type="number"], input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  input[type="number"], input[type="text"] {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .container {
+    width: 95%;
+    margin: 10px auto;
+  }
+}
+/* card style */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  
+  .card-title {
+    color: #333;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  .card-content {
+    margin-top: 10px;
+  }
